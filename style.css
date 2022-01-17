@@ -76,7 +76,6 @@ p { padding: 10px;}
     float: left;
     margin: 0 auto;
     width:100%;
-    -webkit-text-size-adjust: none;
 }
 
 #content {
@@ -84,7 +83,7 @@ p { padding: 10px;}
     border-radius: 10px;
     border: 1px solid #a1a1a1;
     margin: 5px;
-    max-height: 5000em;
+    text-size-adjust: none;
     }
 
 #footerwrap {
@@ -118,7 +117,6 @@ p { padding: 10px;}
 .finishFloat{
   clear: both;
   }
-
 
 
 ul{padding-left: 30px;
@@ -182,6 +180,7 @@ h1{
     padding: 1em;
     text-align: center;
     text-decoration: none;
+    text-size-adjust: none;
     display: inline-block;
     font-size: 1.1em;
     border-style: solid;
@@ -269,13 +268,13 @@ table,td,th,tr {
 
 .rotate90 {
   width: 200px;
-  height: 200px;
   margin:0px;
   padding:2px;
   font-weight: bold;
   text-align: center;
   font-size: 1.2em;
-  transform: rotate(-90deg);
+  white-space: nowrap;
+  transform: translate(-40%,250%) rotate(-90deg);
  }
 @media print {
   .ace_editor {
