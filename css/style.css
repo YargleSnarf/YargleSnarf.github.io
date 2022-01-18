@@ -1,4 +1,4 @@
-    html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, s, samp,
@@ -83,7 +83,7 @@ p { padding: 10px;}
     border-radius: 10px;
     border: 1px solid #a1a1a1;
     margin: 5px;
-    text-size-adjust: none;
+    text-size-adjust: 200%;
     }
 
 #footerwrap {
@@ -226,7 +226,7 @@ h1{
 ol {
   counter-reset: olCounter;
   padding-left: 3em;
-  margin-left:-200px;
+  margin-left:-65%;
 }
 ol li:before {
   content: counter(olCounter);
@@ -256,7 +256,7 @@ table,td,th,tr {
   }
 
 .index{
-  background: linear-gradient(to right, rgb(100,100,150), white,white,white,white);
+  background: linear-gradient(to right, rgb(100,100,150), white,white,white,white,white,white);
   display: inline-block;
   border-top:2px;
   border-bottom:2px;
@@ -264,6 +264,8 @@ table,td,th,tr {
   border-bottom-left-radius: 10px;
   border-color: #a1a1a1;
   border-style: solid;
+  white-space: nowrap;
+  width:60%;
 }
 
 .rotate90 {
@@ -274,7 +276,9 @@ table,td,th,tr {
   text-align: center;
   font-size: 1.2em;
   white-space: nowrap;
-  transform: translate(-40%,250%) rotate(-90deg);
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translate(-130%, 30%);
+  text-size-adjust: 150%;
  }
 @media print {
   .ace_editor {
